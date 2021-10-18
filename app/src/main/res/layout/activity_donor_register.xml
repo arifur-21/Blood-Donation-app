@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@color/bg"
+        tools:context=".DonorRegisterActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/loginid"
+                    android:layout_gravity="center"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/tv_oneId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Donor Registration"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:layout_marginTop="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:text="Sign up to continue"
+                    android:layout_marginTop="10dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/profile"
+                    android:id="@+id/donorRegProImgId"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextInputLayoutStyle"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    app:boxStrokeColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/donorRegFullNameId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter full name"
+                        android:drawablePadding="10dp"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:drawableStart="@drawable/ic_baseline_person_24" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextInputLayoutStyle"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    app:boxStrokeColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/donorRegIdNumId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter ID Number"
+                        android:inputType="number"
+                        android:drawablePadding="10dp"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:drawableStart="@drawable/ic_baseline_person_24" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextInputLayoutStyle"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    app:boxStrokeColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/donorRegPhoneNumId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Phone Number"
+                        android:inputType="number"
+                        android:drawablePadding="10dp"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:drawableStart="@drawable/ic_baseline_person_24" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/donorRegSpinnerId"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:entries="@array/bloodgroups"
+                    android:layout_gravity="center" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextInputLayoutStyle"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    app:boxStrokeColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/donorRegEmailId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter your email"
+                        android:drawablePadding="10dp"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:drawableStart="@drawable/ic_baseline_person_24" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextInputLayoutStyle"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    app:boxStrokeColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/donorRegPasswordId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter your password"
+                        android:inputType="textPassword"
+                        android:drawablePadding="10dp"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:drawableStart="@drawable/ic_baseline_person_24" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/donorRegSignUpBtnId"
+                    android:text="Sign Up" />
+
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Already Registered?"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text=" Sign In"
+                        android:textStyle="bold"
+                        android:id="@+id/donorRegSinInTvId" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>
